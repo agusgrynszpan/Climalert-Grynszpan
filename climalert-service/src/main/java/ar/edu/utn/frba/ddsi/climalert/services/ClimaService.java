@@ -1,9 +1,9 @@
-package ar.edu.utn.frba.ddsi.donaciones.services;
+package ar.edu.utn.frba.ddsi.climalert.services;
 
-import ar.edu.utn.frba.ddsi.donaciones.dto.ClimaAPIClient;
-import ar.edu.utn.frba.ddsi.donaciones.dto.ClimaAPIResponse;
-import ar.edu.utn.frba.ddsi.donaciones.models.entities.ClimaRecord;
-import ar.edu.utn.frba.ddsi.donaciones.models.repositories.ClimaRepository;
+import ar.edu.utn.frba.ddsi.climalert.dto.ClimaAPIClient;
+import ar.edu.utn.frba.ddsi.climalert.dto.ClimaAPIResponse;
+import ar.edu.utn.frba.ddsi.climalert.models.entities.ClimaRecord;
+import ar.edu.utn.frba.ddsi.climalert.models.repositories.ClimaRepository;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;

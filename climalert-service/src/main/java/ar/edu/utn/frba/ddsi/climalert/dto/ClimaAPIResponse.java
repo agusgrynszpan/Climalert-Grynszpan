@@ -1,4 +1,4 @@
-package ar.edu.utn.frba.ddsi.donaciones.dto;
+package ar.edu.utn.frba.ddsi.climalert.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;

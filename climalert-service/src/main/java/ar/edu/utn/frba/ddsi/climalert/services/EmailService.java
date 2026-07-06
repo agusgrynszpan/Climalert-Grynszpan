@@ -1,6 +1,6 @@
-package ar.edu.utn.frba.ddsi.donaciones.services;
+package ar.edu.utn.frba.ddsi.climalert.services;
 
-import ar.edu.utn.frba.ddsi.donaciones.models.entities.ClimaRecord;
+import ar.edu.utn.frba.ddsi.climalert.models.entities.ClimaRecord;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;

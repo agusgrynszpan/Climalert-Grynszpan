@@ -1,6 +1,6 @@
-package ar.edu.utn.frba.ddsi.donaciones.schedulers;
+package ar.edu.utn.frba.ddsi.climalert.schedulers;
 
-import ar.edu.utn.frba.ddsi.donaciones.services.ClimaService;
+import ar.edu.utn.frba.ddsi.climalert.services.ClimaService;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 

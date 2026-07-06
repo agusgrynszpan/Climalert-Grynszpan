@@ -1,6 +1,6 @@
-package ar.edu.utn.frba.ddsi.donaciones.models.repositories;
+package ar.edu.utn.frba.ddsi.climalert.models.repositories;
 
-import ar.edu.utn.frba.ddsi.donaciones.models.entities.ClimaRecord;
+import ar.edu.utn.frba.ddsi.climalert.models.entities.ClimaRecord;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;

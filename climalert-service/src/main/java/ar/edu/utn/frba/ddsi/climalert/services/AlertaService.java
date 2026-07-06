@@ -1,7 +1,7 @@
-package ar.edu.utn.frba.ddsi.donaciones.services;
+package ar.edu.utn.frba.ddsi.climalert.services;
 
-import ar.edu.utn.frba.ddsi.donaciones.models.entities.ClimaRecord;
-import ar.edu.utn.frba.ddsi.donaciones.models.repositories.ClimaRepository;
+import ar.edu.utn.frba.ddsi.climalert.models.entities.ClimaRecord;
+import ar.edu.utn.frba.ddsi.climalert.models.repositories.ClimaRepository;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -12,7 +12,6 @@ public class AlertaService {
 
     public AlertaService(ClimaRepository repository,
                          EmailService emailService) {
-
         this.repository = repository;
         this.emailService = emailService;
     }
@@ -21,7 +20,9 @@ public class AlertaService {
 
         ClimaRecord clima = repository.ultimoRegistro();
 
-        if(clima.hayAlerta() && !clima.isAlertaEnviada()){
+        if (clima != null &&
+                clima.hayAlerta() &&
+                !clima.isAlertaEnviada()) {
 
             emailService.enviarAlerta(clima);
 
