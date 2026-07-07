@@ -24,6 +24,8 @@ public class AlertaService {
                 clima.hayAlerta() &&
                 !clima.isAlertaEnviada()) {
 
+            System.out.println("Hay alerta");
+
             emailService.enviarAlerta(clima);
 
             clima.marcarComoNotificada();
