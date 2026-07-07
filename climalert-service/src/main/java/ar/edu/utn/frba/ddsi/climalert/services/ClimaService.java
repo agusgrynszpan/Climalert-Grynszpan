@@ -25,9 +25,18 @@ public class ClimaService {
 
         ClimaAPIResponse response = apiClient.obtenerClimaActual();
 
-        ClimaRecord clima = new ClimaRecord(
+        System.out.println("Temperatura: " + response.getCurrent().getTemperatura());
+        System.out.println("Humedad: " + response.getCurrent().getHumedad());
+
+        /*ClimaRecord clima = new ClimaRecord(
                 response.getCurrent().getTemperatura(),
                 response.getCurrent().getHumedad(),
+                LocalDateTime.now()
+        );*/
+
+        ClimaRecord clima = new ClimaRecord(
+                40.0,
+                80,
                 LocalDateTime.now()
         );
 
